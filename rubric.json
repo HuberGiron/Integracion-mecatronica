@@ -1,0 +1,964 @@
+{
+  "version": "2.0.0",
+  "title": "Rúbrica de documentación · Proyecto de Integración Mecatrónica",
+  "shortTitle": "Proyecto de Integración Mecatrónica",
+  "description": "Evalúa el proceso completo de desarrollo de una solución mecatrónica: necesidad, especificaciones, conceptos, diseño, fabricación, integración, verificación y documentación.",
+  "instructions": "Marca Cumple únicamente cuando la evidencia exista, sea verificable y corresponda con la versión presentada. Los criterios marcados como No aplica se excluyen del denominador. Usa No aplica sólo cuando el criterio realmente no corresponde al alcance del proyecto.",
+  "storageKey": "integracion-autoevaluacion-v2",
+  "tags": {
+    "photo": "Foto",
+    "video": "Video",
+    "download": "Descargable",
+    "test": "Prueba",
+    "calc": "Cálculo",
+    "source": "Fuente",
+    "trace": "Trazabilidad",
+    "safety": "Seguridad",
+    "user": "Usuario",
+    "manufacturing": "Manufactura",
+    "cost": "Costo"
+  },
+  "sections": [
+    {
+      "id": "necesidades",
+      "title": "Problema, usuario y necesidades",
+      "description": "Definición del problema y evidencia de que las necesidades provienen del contexto real de uso.",
+      "items": [
+        {
+          "id": "N01",
+          "title": "Problema o necesidad claramente definido",
+          "detail": "Se explica qué situación se pretende resolver, quién se ve afectado y por qué es relevante.",
+          "weight": 1
+        },
+        {
+          "id": "N02",
+          "title": "Objetivo general definido",
+          "detail": "El objetivo expresa el resultado global que debe lograr la solución mecatrónica.",
+          "weight": 1
+        },
+        {
+          "id": "N03",
+          "title": "Usuarios y actores identificados",
+          "detail": "Se identifican usuarios, operadores, mantenedores u otros actores relevantes del sistema.",
+          "weight": 1
+        },
+        {
+          "id": "N04",
+          "title": "Contexto y escenario de uso documentados",
+          "detail": "Se describe dónde, cómo y bajo qué condiciones se utilizará la solución.",
+          "weight": 1
+        },
+        {
+          "id": "N05",
+          "title": "Método de identificación de necesidades documentado",
+          "detail": "Se indica cómo se obtuvieron las necesidades: entrevista, observación, encuesta, análisis de uso u otro método.",
+          "weight": 1,
+          "tags": [
+            "user"
+          ]
+        },
+        {
+          "id": "N06",
+          "title": "Evidencia de necesidades recopilada",
+          "detail": "Se presentan notas, tablas, registros, fotografías, transcripciones resumidas u otra evidencia de la recopilación.",
+          "weight": 1,
+          "tags": [
+            "user",
+            "photo"
+          ]
+        },
+        {
+          "id": "N07",
+          "title": "Necesidades expresadas sin imponer una solución",
+          "detail": "Las necesidades indican lo que el sistema debe lograr, evitando definir prematuramente componentes o tecnologías.",
+          "weight": 1
+        },
+        {
+          "id": "N08",
+          "title": "Necesidades priorizadas",
+          "detail": "Las necesidades principales tienen una prioridad o importancia relativa justificada.",
+          "weight": 1,
+          "tags": [
+            "user"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "especificaciones",
+      "title": "Requerimientos y especificaciones",
+      "description": "Conversión de necesidades en requisitos técnicos medibles y verificables.",
+      "items": [
+        {
+          "id": "R01",
+          "title": "Requerimientos funcionales definidos",
+          "detail": "Se documentan las funciones que el sistema debe realizar.",
+          "weight": 1
+        },
+        {
+          "id": "R02",
+          "title": "Requerimientos no funcionales y restricciones definidos",
+          "detail": "Se documentan límites de dimensiones, masa, energía, costo, materiales, ambiente, disponibilidad u otros que apliquen.",
+          "weight": 1
+        },
+        {
+          "id": "R03",
+          "title": "Restricciones de seguridad, normativa o ambiente identificadas",
+          "detail": "Se registran restricciones de seguridad y, cuando corresponda, normas, aspectos legales o ambientales.",
+          "weight": 1,
+          "tags": [
+            "safety"
+          ]
+        },
+        {
+          "id": "R04",
+          "title": "Tabla de especificaciones de ingeniería",
+          "detail": "Las características críticas se expresan mediante métricas cuantificables.",
+          "weight": 1
+        },
+        {
+          "id": "R05",
+          "title": "Unidades y métodos de medición definidos",
+          "detail": "Cada especificación medible incluye unidad y forma prevista de medición cuando corresponde.",
+          "weight": 1,
+          "tags": [
+            "test"
+          ]
+        },
+        {
+          "id": "R06",
+          "title": "Valores objetivo y límites aceptables definidos",
+          "detail": "Se indican metas, rangos, tolerancias o valores marginalmente aceptables antes de las pruebas.",
+          "weight": 1
+        },
+        {
+          "id": "R07",
+          "title": "Trazabilidad necesidad–especificación",
+          "detail": "Puede identificarse qué necesidad o requerimiento origina cada especificación crítica.",
+          "weight": 1,
+          "tags": [
+            "trace"
+          ]
+        },
+        {
+          "id": "R08",
+          "title": "Criterios de aceptación definidos antes de probar",
+          "detail": "Se establece qué resultado se considerará Cumple/No cumple para las pruebas finales.",
+          "weight": 1,
+          "tags": [
+            "test"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "investigacion",
+      "title": "Investigación y estado del arte",
+      "description": "Búsqueda de soluciones existentes y fuentes técnicas antes de seleccionar una arquitectura.",
+      "items": [
+        {
+          "id": "I01",
+          "title": "Benchmark de soluciones similares",
+          "detail": "Se identifican y comparan productos, sistemas o proyectos existentes relacionados.",
+          "weight": 1,
+          "tags": [
+            "source"
+          ]
+        },
+        {
+          "id": "I02",
+          "title": "Tecnologías alternativas comparadas",
+          "detail": "Se revisan tecnologías o principios distintos que podrían resolver las funciones críticas.",
+          "weight": 1,
+          "tags": [
+            "source"
+          ]
+        },
+        {
+          "id": "I03",
+          "title": "Datasheets y documentación técnica consultados",
+          "detail": "Las decisiones de componentes se apoyan en documentación técnica del fabricante u otras fuentes primarias.",
+          "weight": 1,
+          "tags": [
+            "source"
+          ]
+        },
+        {
+          "id": "I04",
+          "title": "Patentes o literatura especializada revisadas cuando aportan valor",
+          "detail": "Se documentan antecedentes relevantes de patentes, artículos, tesis o memorias cuando el proyecto lo justifica.",
+          "weight": 1,
+          "tags": [
+            "source"
+          ],
+          "naAllowed": true
+        },
+        {
+          "id": "I05",
+          "title": "Alternativas de componentes críticos investigadas",
+          "detail": "Se comparan opciones para actuadores, sensores, procesamiento, energía u otros elementos críticos.",
+          "weight": 1
+        },
+        {
+          "id": "I06",
+          "title": "Referencias vinculadas con decisiones de diseño",
+          "detail": "Se explica qué información obtenida del estado del arte influyó en el diseño final.",
+          "weight": 1,
+          "tags": [
+            "source",
+            "trace"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conceptos",
+      "title": "Arquitectura funcional y generación de conceptos",
+      "description": "Descomposición del problema y exploración de soluciones antes del diseño de detalle.",
+      "items": [
+        {
+          "id": "C01",
+          "title": "Función global representada",
+          "detail": "Se representa el sistema como una función global con sus entradas y salidas principales.",
+          "weight": 1
+        },
+        {
+          "id": "C02",
+          "title": "Flujos de energía, información y materia identificados",
+          "detail": "Se identifican los flujos relevantes que atraviesan el sistema.",
+          "weight": 1,
+          "naAllowed": true
+        },
+        {
+          "id": "C03",
+          "title": "Descomposición en subfunciones",
+          "detail": "La función global se divide en subfunciones suficientemente claras para explorar soluciones.",
+          "weight": 1
+        },
+        {
+          "id": "C04",
+          "title": "Arquitectura general del sistema definida",
+          "detail": "Se muestran los subsistemas mecánico, electrónico, software, energía y comunicación que correspondan.",
+          "weight": 1
+        },
+        {
+          "id": "C05",
+          "title": "Interfaces entre subsistemas identificadas",
+          "detail": "Se documenta qué intercambian los subsistemas: fuerzas, energía, señales, datos o comandos.",
+          "weight": 1
+        },
+        {
+          "id": "C06",
+          "title": "Se generan al menos tres conceptos diferentes",
+          "detail": "Se presentan alternativas con principios de solución realmente distintos, no sólo cambios estéticos.",
+          "weight": 1
+        },
+        {
+          "id": "C07",
+          "title": "Cada concepto tiene representación y principio de operación",
+          "detail": "Cada alternativa incluye boceto, diagrama, modelo o representación suficiente para entender cómo funciona.",
+          "weight": 1,
+          "tags": [
+            "photo"
+          ]
+        },
+        {
+          "id": "C08",
+          "title": "Tecnologías principales de cada concepto identificadas",
+          "detail": "Se indican los componentes o tecnologías clave necesarios para implementar cada concepto.",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "seleccion",
+      "title": "Selección de concepto y prototipado temprano",
+      "description": "Comparación objetiva de alternativas y reducción de incertidumbre antes de congelar el diseño.",
+      "items": [
+        {
+          "id": "S01",
+          "title": "Criterios de selección derivados de las necesidades",
+          "detail": "Los criterios utilizados para comparar conceptos se relacionan con necesidades, especificaciones y restricciones.",
+          "weight": 1,
+          "tags": [
+            "trace"
+          ]
+        },
+        {
+          "id": "S02",
+          "title": "Matriz de decisión o método de selección documentado",
+          "detail": "La comparación de conceptos utiliza un procedimiento explícito y reproducible.",
+          "weight": 1
+        },
+        {
+          "id": "S03",
+          "title": "Ponderaciones de criterios justificadas",
+          "detail": "Cuando existen pesos distintos, se explica por qué ciertos criterios tienen mayor importancia.",
+          "weight": 1
+        },
+        {
+          "id": "S04",
+          "title": "Concepto seleccionado con justificación técnica",
+          "detail": "La elección final se sustenta en la comparación realizada y no sólo en preferencia del equipo.",
+          "weight": 1
+        },
+        {
+          "id": "S05",
+          "title": "Riesgos técnicos del concepto identificados",
+          "detail": "Se reconocen las incertidumbres o elementos de mayor riesgo antes del diseño detallado.",
+          "weight": 1,
+          "tags": [
+            "safety"
+          ]
+        },
+        {
+          "id": "S06",
+          "title": "Prototipos o pruebas de principio realizados",
+          "detail": "Se construyen o simulan pruebas rápidas para resolver incertidumbres críticas cuando corresponde.",
+          "weight": 1,
+          "tags": [
+            "test",
+            "photo"
+          ],
+          "naAllowed": true
+        },
+        {
+          "id": "S07",
+          "title": "Resultados del prototipado documentados",
+          "detail": "Las pruebas tempranas incluyen observaciones, mediciones o evidencia suficiente para apoyar decisiones.",
+          "weight": 1,
+          "tags": [
+            "test"
+          ],
+          "naAllowed": true
+        },
+        {
+          "id": "S08",
+          "title": "Cambios al concepto derivados de las pruebas registrados",
+          "detail": "Se documentan las modificaciones realizadas como consecuencia de prototipos, simulaciones o pruebas iniciales.",
+          "weight": 1,
+          "tags": [
+            "trace"
+          ],
+          "naAllowed": true
+        }
+      ]
+    },
+    {
+      "id": "dimensionamiento",
+      "title": "Diseño y dimensionamiento de ingeniería",
+      "description": "Cálculos, modelos y selección técnica que convierten el concepto en un diseño realizable.",
+      "items": [
+        {
+          "id": "D01",
+          "title": "Variables y parámetros críticos identificados",
+          "detail": "Se definen las magnitudes que condicionan el desempeño del sistema.",
+          "weight": 1
+        },
+        {
+          "id": "D02",
+          "title": "Cálculos mecánicos relevantes documentados",
+          "detail": "Se incluyen cálculos de fuerza, torque, velocidad, esfuerzo, geometría u otros que correspondan.",
+          "weight": 1,
+          "tags": [
+            "calc"
+          ],
+          "naAllowed": true
+        },
+        {
+          "id": "D03",
+          "title": "Cálculos eléctricos y de potencia documentados",
+          "detail": "Se justifican voltajes, corrientes, potencia, consumo, protecciones y capacidad de alimentación.",
+          "weight": 1,
+          "tags": [
+            "calc"
+          ]
+        },
+        {
+          "id": "D04",
+          "title": "Cálculos de autonomía o balance energético documentados",
+          "detail": "Se estima autonomía, energía disponible o consumo cuando el sistema utiliza almacenamiento de energía.",
+          "weight": 1,
+          "tags": [
+            "calc"
+          ],
+          "naAllowed": true
+        },
+        {
+          "id": "D05",
+          "title": "Modelos o simulaciones utilizados cuando aportan valor",
+          "detail": "Se documentan simulaciones mecánicas, eléctricas, control, térmicas u otras relevantes.",
+          "weight": 1,
+          "tags": [
+            "calc"
+          ],
+          "naAllowed": true
+        },
+        {
+          "id": "D06",
+          "title": "Componentes críticos seleccionados contra especificaciones",
+          "detail": "La selección de actuadores, sensores, controladores, fuentes u otros componentes se relaciona con requisitos cuantitativos.",
+          "weight": 1,
+          "tags": [
+            "trace"
+          ]
+        },
+        {
+          "id": "D07",
+          "title": "Márgenes y factores de seguridad justificados",
+          "detail": "Se consideran márgenes de diseño o factores de seguridad donde son técnicamente necesarios.",
+          "weight": 1,
+          "tags": [
+            "safety",
+            "calc"
+          ],
+          "naAllowed": true
+        },
+        {
+          "id": "D08",
+          "title": "Supuestos y limitaciones de los cálculos declarados",
+          "detail": "Se documentan hipótesis, simplificaciones y condiciones bajo las que son válidos los cálculos.",
+          "weight": 1,
+          "tags": [
+            "calc"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mecanica",
+      "title": "Diseño mecánico y manufactura",
+      "description": "Definición, fabricación y verificación del subsistema mecánico.",
+      "items": [
+        {
+          "id": "M01",
+          "title": "Modelo CAD o definición geométrica completa",
+          "detail": "La geometría final del sistema y sus piezas está documentada en archivos editables.",
+          "weight": 1,
+          "tags": [
+            "download"
+          ]
+        },
+        {
+          "id": "M02",
+          "title": "Planos o dibujos de fabricación disponibles",
+          "detail": "Las piezas que requieren fabricación cuentan con dimensiones, tolerancias o información suficiente para reproducirlas.",
+          "weight": 1,
+          "tags": [
+            "download",
+            "manufacturing"
+          ]
+        },
+        {
+          "id": "M03",
+          "title": "Materiales y procesos de fabricación definidos",
+          "detail": "Cada pieza relevante indica material y proceso de manufactura seleccionado.",
+          "weight": 1,
+          "tags": [
+            "manufacturing"
+          ]
+        },
+        {
+          "id": "M04",
+          "title": "Tolerancias, ajustes y uniones críticas documentados",
+          "detail": "Se especifican holguras, interferencias, tornillería, adhesivos, soldadura u otros métodos de unión donde sean relevantes.",
+          "weight": 1,
+          "tags": [
+            "manufacturing"
+          ]
+        },
+        {
+          "id": "M05",
+          "title": "BOM mecánica completa",
+          "detail": "Se listan piezas fabricadas y comerciales con cantidades y especificaciones suficientes.",
+          "weight": 1,
+          "tags": [
+            "download",
+            "cost"
+          ]
+        },
+        {
+          "id": "M06",
+          "title": "Archivos de fabricación disponibles",
+          "detail": "Se incluyen STL, STEP, DXF, SVG, CAM u otros archivos necesarios para reproducir las piezas.",
+          "weight": 1,
+          "tags": [
+            "download",
+            "manufacturing"
+          ]
+        },
+        {
+          "id": "M07",
+          "title": "Proceso de fabricación documentado con evidencia real",
+          "detail": "Se muestran fotografías y pasos relevantes de fabricación, no sólo renders.",
+          "weight": 1,
+          "tags": [
+            "photo",
+            "manufacturing"
+          ]
+        },
+        {
+          "id": "M08",
+          "title": "Ensamble mecánico final documentado",
+          "detail": "Se presentan fotografías del ensamble real y se explican las relaciones entre piezas y subconjuntos.",
+          "weight": 1,
+          "tags": [
+            "photo"
+          ]
+        },
+        {
+          "id": "M09",
+          "title": "Pruebas mecánicas o dimensionales realizadas",
+          "detail": "Se verifican dimensiones, movimiento, rigidez, carga, interferencias u otras características críticas.",
+          "weight": 1,
+          "tags": [
+            "test"
+          ],
+          "naAllowed": true
+        }
+      ]
+    },
+    {
+      "id": "electronica",
+      "title": "Electrónica, instrumentación y energía",
+      "description": "Diseño, implementación y comprobación del hardware electrónico y de potencia.",
+      "items": [
+        {
+          "id": "E01",
+          "title": "Arquitectura electrónica y de potencia documentada",
+          "detail": "Se muestran controladores, sensores, actuadores, fuentes y rutas principales de energía y señal.",
+          "weight": 1
+        },
+        {
+          "id": "E02",
+          "title": "Diagrama esquemático completo",
+          "detail": "Las conexiones eléctricas están representadas mediante un esquema legible y coherente con el prototipo.",
+          "weight": 1,
+          "tags": [
+            "download"
+          ]
+        },
+        {
+          "id": "E03",
+          "title": "Asignación de pines, señales e interfaces documentada",
+          "detail": "Se identifican pines, nombres de señal, niveles eléctricos y función de cada interfaz relevante.",
+          "weight": 1
+        },
+        {
+          "id": "E04",
+          "title": "Protecciones eléctricas y distribución de energía justificadas",
+          "detail": "Se documentan fusibles, diodos, regulación, desacoplo, protección de polaridad u otras medidas que correspondan.",
+          "weight": 1,
+          "tags": [
+            "safety"
+          ]
+        },
+        {
+          "id": "E05",
+          "title": "BOM electrónica completa",
+          "detail": "Se listan componentes, valores, cantidades, encapsulados y referencias necesarias para reproducir el hardware.",
+          "weight": 1,
+          "tags": [
+            "download",
+            "cost"
+          ]
+        },
+        {
+          "id": "E06",
+          "title": "Diseño PCB documentado cuando aplica",
+          "detail": "Se incluyen esquemático, layout, reglas principales y archivos de fabricación de la tarjeta diseñada.",
+          "weight": 1,
+          "tags": [
+            "download"
+          ],
+          "naAllowed": true
+        },
+        {
+          "id": "E07",
+          "title": "Ensamble y cableado electrónico documentados",
+          "detail": "Fotografías reales muestran conexiones, placas, conectores, alimentación y montaje.",
+          "weight": 1,
+          "tags": [
+            "photo"
+          ]
+        },
+        {
+          "id": "E08",
+          "title": "Pruebas eléctricas y de señales realizadas",
+          "detail": "Se verifican tensiones, corrientes, señales, sensores, actuadores u otras variables críticas.",
+          "weight": 1,
+          "tags": [
+            "test"
+          ]
+        },
+        {
+          "id": "E09",
+          "title": "Resultados de instrumentación registrados",
+          "detail": "Se incluyen capturas, tablas o registros de mediciones relevantes y su interpretación.",
+          "weight": 1,
+          "tags": [
+            "test",
+            "photo"
+          ],
+          "naAllowed": true
+        }
+      ]
+    },
+    {
+      "id": "red",
+      "title": "Red y comunicaciones",
+      "description": "Arquitectura, topología, protocolos y pruebas de comunicación cuando el sistema intercambia datos.",
+      "items": [
+        {
+          "id": "NET01",
+          "title": "Arquitectura y topología de red documentadas",
+          "detail": "Se representan nodos, enlaces, roles y relaciones de comunicación del sistema.",
+          "weight": 1,
+          "naAllowed": true
+        },
+        {
+          "id": "NET02",
+          "title": "Elementos inteligentes y responsabilidades identificados",
+          "detail": "Se documenta qué procesa, mide, controla o comunica cada nodo inteligente.",
+          "weight": 1,
+          "naAllowed": true
+        },
+        {
+          "id": "NET03",
+          "title": "Protocolos e interfaces de comunicación definidos",
+          "detail": "Se especifican Wi-Fi, BLE, MQTT, HTTP, UART, I2C, CAN u otros protocolos utilizados.",
+          "weight": 1,
+          "naAllowed": true
+        },
+        {
+          "id": "NET04",
+          "title": "Direcciones, puertos, tópicos o estructura de mensajes documentados",
+          "detail": "Se registran los parámetros necesarios para reproducir la comunicación.",
+          "weight": 1,
+          "naAllowed": true
+        },
+        {
+          "id": "NET05",
+          "title": "Flujo de datos y manejo de errores documentados",
+          "detail": "Se explica qué datos circulan, en qué dirección y qué ocurre ante desconexión, pérdida o datos inválidos.",
+          "weight": 1,
+          "tags": [
+            "safety"
+          ],
+          "naAllowed": true
+        },
+        {
+          "id": "NET06",
+          "title": "Pruebas de comunicación y desempeño realizadas",
+          "detail": "Se verifican conectividad y, cuando es relevante, latencia, pérdida, alcance o tasa de actualización.",
+          "weight": 1,
+          "tags": [
+            "test"
+          ],
+          "naAllowed": true
+        }
+      ]
+    },
+    {
+      "id": "software",
+      "title": "Software, firmware, control e interfaz",
+      "description": "Arquitectura, lógica, código y reproducibilidad del software que opera la solución.",
+      "items": [
+        {
+          "id": "SW01",
+          "title": "Arquitectura del software documentada",
+          "detail": "Se muestran módulos, capas o componentes principales y sus relaciones.",
+          "weight": 1
+        },
+        {
+          "id": "SW02",
+          "title": "Flujo principal, estados o secuencias documentados",
+          "detail": "Se representa el comportamiento mediante diagrama de flujo, máquina de estados, secuencia u otro recurso apropiado.",
+          "weight": 1
+        },
+        {
+          "id": "SW03",
+          "title": "Algoritmos o lógica de control explicados",
+          "detail": "Se describe la estrategia de control, condiciones, límites y decisiones principales del sistema.",
+          "weight": 1,
+          "naAllowed": true
+        },
+        {
+          "id": "SW04",
+          "title": "Interfaz de usuario documentada",
+          "detail": "Se muestran pantallas o controles, su función y el procedimiento de acceso cuando existe una interfaz.",
+          "weight": 1,
+          "tags": [
+            "photo"
+          ],
+          "naAllowed": true
+        },
+        {
+          "id": "SW05",
+          "title": "Dependencias, versiones y parámetros documentados",
+          "detail": "Se registran librerías, frameworks, versiones, pines, constantes, límites, calibraciones y configuraciones relevantes.",
+          "weight": 1
+        },
+        {
+          "id": "SW06",
+          "title": "Código fuente completo disponible",
+          "detail": "El repositorio o paquete contiene el código correspondiente con la versión demostrada.",
+          "weight": 1,
+          "tags": [
+            "download"
+          ]
+        },
+        {
+          "id": "SW07",
+          "title": "Compilación, instalación y ejecución reproducibles",
+          "detail": "Se documentan los pasos y entorno necesarios para que otra persona pueda ejecutar el software.",
+          "weight": 1,
+          "tags": [
+            "download"
+          ]
+        },
+        {
+          "id": "SW08",
+          "title": "Pruebas, errores y versión final del software documentados",
+          "detail": "Se registran pruebas de entradas, procesamiento, salidas, interfaz o comunicación, junto con correcciones y versión final.",
+          "weight": 1,
+          "tags": [
+            "test",
+            "trace"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "integracion",
+      "title": "Integración y operación del sistema",
+      "description": "Evidencia de que los subsistemas funcionan juntos y pueden operarse de forma reproducible.",
+      "items": [
+        {
+          "id": "G01",
+          "title": "Integración mecánica–electrónica–software documentada",
+          "detail": "Se muestra cómo se conectan físicamente y lógicamente los subsistemas.",
+          "weight": 1
+        },
+        {
+          "id": "G02",
+          "title": "Cableado, energía y montaje final documentados",
+          "detail": "Se incluyen fotografías del sistema real con electrónica, cableado, fijaciones y distribución de energía.",
+          "weight": 1,
+          "tags": [
+            "photo"
+          ]
+        },
+        {
+          "id": "G03",
+          "title": "Interfaces físicas y lógicas verificadas",
+          "detail": "Conectores, señales, niveles, protocolos y relaciones entre subsistemas corresponden con la arquitectura documentada.",
+          "weight": 1,
+          "tags": [
+            "trace"
+          ]
+        },
+        {
+          "id": "G04",
+          "title": "Secuencias de arranque, operación y apagado documentadas",
+          "detail": "Se explica cómo poner en marcha, operar y detener el sistema, incluyendo paro seguro cuando corresponda.",
+          "weight": 1,
+          "tags": [
+            "safety"
+          ]
+        },
+        {
+          "id": "G05",
+          "title": "Pruebas de integración por subsistemas",
+          "detail": "Se demuestra progresivamente que las combinaciones críticas de subsistemas funcionan antes de la prueba completa.",
+          "weight": 1,
+          "tags": [
+            "test"
+          ]
+        },
+        {
+          "id": "G06",
+          "title": "Prueba funcional del sistema completo",
+          "detail": "Existe una prueba con entrada o comando identificable y una respuesta observable del sistema completo.",
+          "weight": 1,
+          "tags": [
+            "test",
+            "video"
+          ]
+        },
+        {
+          "id": "G07",
+          "title": "Fallas de integración, cambios y repetición de pruebas",
+          "detail": "Se registran problemas encontrados, modificaciones realizadas y la verificación posterior de la solución.",
+          "weight": 1,
+          "tags": [
+            "test",
+            "trace"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "validacion",
+      "title": "Verificación, validación y seguridad",
+      "description": "Pruebas formales contra especificaciones y validación de la solución en un escenario representativo.",
+      "items": [
+        {
+          "id": "V01",
+          "title": "Matriz de verificación requisito–prueba–resultado",
+          "detail": "Los requerimientos o especificaciones críticas se vinculan con un método de prueba y su resultado.",
+          "weight": 1,
+          "tags": [
+            "test",
+            "trace"
+          ]
+        },
+        {
+          "id": "V02",
+          "title": "Valores esperados y medidos comparados",
+          "detail": "Las pruebas críticas registran el criterio esperado y el valor o comportamiento realmente obtenido.",
+          "weight": 1,
+          "tags": [
+            "test"
+          ]
+        },
+        {
+          "id": "V03",
+          "title": "Condiciones e instrumentos de prueba documentados",
+          "detail": "Se registran condiciones relevantes, instrumentos, configuración y procedimiento de medición.",
+          "weight": 1,
+          "tags": [
+            "test"
+          ]
+        },
+        {
+          "id": "V04",
+          "title": "Repetibilidad o incertidumbre evaluadas cuando son relevantes",
+          "detail": "Se realizan repeticiones, estadísticas básicas o análisis de variación cuando una sola medición no es suficiente.",
+          "weight": 1,
+          "tags": [
+            "test"
+          ],
+          "naAllowed": true
+        },
+        {
+          "id": "V05",
+          "title": "Validación en escenario representativo",
+          "detail": "La solución se prueba realizando la tarea para la que fue diseñada, no sólo mediante pruebas aisladas.",
+          "weight": 1,
+          "tags": [
+            "test",
+            "video"
+          ]
+        },
+        {
+          "id": "V06",
+          "title": "Retroalimentación o aceptación de usuario documentada cuando aplica",
+          "detail": "Se registra la experiencia, observación o aceptación del usuario u operador relevante.",
+          "weight": 1,
+          "tags": [
+            "user"
+          ],
+          "naAllowed": true
+        },
+        {
+          "id": "V07",
+          "title": "Riesgos y modos de falla principales identificados",
+          "detail": "Se consideran riesgos mecánicos, eléctricos, térmicos, de software, comunicación u operación según corresponda.",
+          "weight": 1,
+          "tags": [
+            "safety"
+          ]
+        },
+        {
+          "id": "V08",
+          "title": "Mitigaciones, protecciones y comportamiento seguro comprobados",
+          "detail": "Se documentan protecciones, límites, paros, recuperación o acciones seguras ante fallas relevantes.",
+          "weight": 1,
+          "tags": [
+            "safety",
+            "test"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resultados",
+      "title": "Costos, resultados y mejora",
+      "description": "Cierre del proyecto con análisis económico básico, cumplimiento y oportunidades de mejora.",
+      "items": [
+        {
+          "id": "F01",
+          "title": "Costo total del prototipo calculado",
+          "detail": "El costo se obtiene de las BOM y otros gastos de fabricación documentados.",
+          "weight": 1,
+          "tags": [
+            "cost"
+          ]
+        },
+        {
+          "id": "F02",
+          "title": "Costo de reproducción o unidad adicional estimado",
+          "detail": "Se estima cuánto costaría reproducir la solución y se compara con la restricción de costo cuando exista.",
+          "weight": 1,
+          "tags": [
+            "cost"
+          ],
+          "naAllowed": true
+        },
+        {
+          "id": "F03",
+          "title": "Resultados contrastados con objetivos y especificaciones",
+          "detail": "Se indica qué se cumplió, qué no se cumplió y cuáles son las limitaciones de la versión final.",
+          "weight": 1,
+          "tags": [
+            "test",
+            "trace"
+          ]
+        },
+        {
+          "id": "F04",
+          "title": "Mejoras futuras sustentadas en evidencia",
+          "detail": "Las propuestas para una siguiente versión se relacionan con problemas, mediciones o limitaciones observadas.",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "id": "evidencias",
+      "title": "Evidencias, archivos y trazabilidad final",
+      "description": "Comprobación de que la documentación publicada es accesible, reproducible y corresponde con la versión presentada.",
+      "items": [
+        {
+          "id": "T01",
+          "title": "Evidencia fotográfica y de video cubre el proceso completo",
+          "detail": "La documentación muestra desarrollo, fabricación, ensamble, pruebas e integración; no sólo el resultado final.",
+          "weight": 1,
+          "tags": [
+            "photo",
+            "video"
+          ]
+        },
+        {
+          "id": "T02",
+          "title": "Archivos editables y de fabricación son accesibles y corresponden con la versión final",
+          "detail": "Los enlaces funcionan, los archivos abren y existe correspondencia entre fuentes, piezas, hardware y software presentados.",
+          "weight": 1,
+          "tags": [
+            "download",
+            "trace"
+          ]
+        },
+        {
+          "id": "T03",
+          "title": "Trazabilidad y versión final consistentes",
+          "detail": "Necesidades, especificaciones, decisiones, implementación, pruebas, resultados y modificaciones corresponden con la versión final documentada.",
+          "weight": 1,
+          "tags": [
+            "trace"
+          ]
+        }
+      ]
+    }
+  ]
+}
