@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Autoevaluación del proceso de desarrollo de un Proyecto de Integración Mecatrónica" />
+  <title>Rúbrica | Proyecto de Integración Mecatrónica</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero no-print">
+    <div class="hero__inner">
+      <div>
+        <p class="eyebrow" id="rubricShortTitle">PROYECTO DE INTEGRACIÓN MECATRÓNICA</p>
+        <h1>Autoevaluación de documentación</h1>
+        <p class="hero__text" id="rubricDescription">Cargando rúbrica…</p>
+        <p class="hero__hint" id="rubricInstructions"></p>
+      </div>
+      <div class="score-card" aria-live="polite">
+        <span class="score-card__label">Resultado actual</span>
+        <strong id="scoreTop">0%</strong>
+        <span id="scoreCount">0 / 100 criterios aplicables</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="panel project-data no-print" aria-labelledby="datos-title">
+      <div class="section-heading">
+        <div>
+          <span class="section-kicker">DATOS DEL EQUIPO</span>
+          <h2 id="datos-title">Identificación del proyecto</h2>
+        </div>
+        <span id="rubricVersion" class="rubric-version"></span>
+      </div>
+
+      <div class="form-grid">
+        <label class="field field--wide">
+          <span>Nombre del proyecto</span>
+          <input id="projectName" type="text" placeholder="Ej. Robot móvil autónomo" autocomplete="off" />
+        </label>
+        <label class="field field--wide">
+          <span>Link de la página / documentación</span>
+          <input id="projectUrl" type="url" placeholder="https://..." autocomplete="off" />
+          <small id="urlStatus">Debe ser una liga accesible para revisión.</small>
+        </label>
+      </div>
+
+      <div class="members-block">
+        <div class="members-block__head">
+          <div>
+            <span class="field-label">Integrantes</span>
+            <small>Agrega a todos los miembros del equipo.</small>
+          </div>
+          <button type="button" class="button button--ghost" id="addMember">+ Agregar integrante</button>
+        </div>
+        <div id="membersList" class="members-list"></div>
+      </div>
+    </section>
+
+    <section class="sticky-progress no-print" aria-label="Progreso de autoevaluación">
+      <div class="sticky-progress__score">
+        <span>Resultado</span>
+        <strong id="scoreSticky">0%</strong>
+      </div>
+      <div>
+        <div class="progress-track"><div id="progressBar" class="progress-bar"></div></div>
+        <small id="applicableCount" class="progress-caption">100 criterios aplicables · 0 N/A</small>
+      </div>
+      <div class="sticky-progress__actions">
+        <button type="button" class="button button--ghost" id="markNone">Limpiar selección</button>
+        <button type="button" class="button button--primary" id="generateReport">Generar reporte</button>
+      </div>
+    </section>
+
+    <section id="loadingMessage" class="panel loading-panel no-print">Cargando <code>rubric.json</code>…</section>
+    <section class="rubric" id="rubric" aria-label="Rúbrica de autoevaluación"></section>
+
+    <section class="panel declaration no-print">
+      <label class="declaration__row">
+        <input id="declaration" type="checkbox" />
+        <span>Confirmamos que las evidencias marcadas como cumplidas están disponibles en la liga indicada y corresponden con la versión presentada del proyecto.</span>
+      </label>
+    </section>
+
+    <section class="actions no-print">
+      <button type="button" class="button button--ghost" id="resetAll">Reiniciar autoevaluación</button>
+      <button type="button" class="button button--primary button--large" id="generateReportBottom">Generar reporte e imprimir</button>
+    </section>
+  </main>
+
+  <section class="report" id="report" aria-hidden="true">
+    <div class="report__toolbar no-print">
+      <button class="button button--ghost" id="backToRubric" type="button">← Volver a la rúbrica</button>
+      <button class="button button--primary" id="printReport" type="button">Imprimir / Guardar PDF</button>
+    </div>
+    <article class="report__page">
+      <header class="report__header">
+        <div>
+          <p class="eyebrow">AUTOEVALUACIÓN · PROYECTO DE INTEGRACIÓN</p>
+          <h1>Reporte de evidencias</h1>
+          <p id="reportDate" class="muted"></p>
+        </div>
+        <div class="report-score">
+          <span>CALIFICACIÓN</span>
+          <strong id="reportScore">0%</strong>
+          <small id="reportCount">0 / 100 aplicables</small>
+        </div>
+      </header>
+
+      <section class="report-meta">
+        <div><span>Proyecto</span><strong id="reportProject">—</strong></div>
+        <div><span>Integrantes</span><strong id="reportMembers">—</strong></div>
+        <div><span>Versión de rúbrica</span><strong id="reportRubricVersion">—</strong></div>
+        <div class="report-meta__url"><span>Página</span><a id="reportUrl" href="#">—</a></div>
+      </section>
+
+      <section>
+        <h2>Resumen por temática</h2>
+        <div id="reportSummary" class="summary-grid"></div>
+      </section>
+
+      <section>
+        <h2>Detalle de evidencias</h2>
+        <div id="reportDetails" class="report-details"></div>
+      </section>
+
+      <section class="report-note">
+        <strong>Declaración de autoevaluación</strong>
+        <p id="reportDeclaration"></p>
+      </section>
+
+      <footer class="report__footer">
+        <span id="reportFooterText">Puntuación normalizada sobre criterios aplicables.</span>
+        <span>Página <span class="page-number"></span></span>
+      </footer>
+    </article>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
