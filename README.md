@@ -71,3 +71,16 @@ En GitHub:
 - **N/A**: sólo cuando el criterio realmente no corresponde al alcance del proyecto y el criterio permite esta opción.
 
 Las evidencias deben ser reproducibles: una captura de pantalla no sustituye un archivo fuente, un render no sustituye una fotografía del sistema real y una descripción no sustituye un video cuando se necesita demostrar movimiento o funcionamiento.
+
+## Evaluación resumida (segunda página)
+
+La aplicación ofrece una **segunda rúbrica** para evaluar únicamente las evidencias del proyecto de integración especificadas para la entrega. La evaluación completa se mantiene intacta.
+
+- **Evaluación completa:** `index.html`, con sus criterios originales en `rubric.json`.
+- **Evaluación resumida:** `evaluacion-resumida.html`, con **31 criterios** ponderados a **100 puntos** en `rubric-resumida.json`.
+- Ambas páginas comparten `app.js` y `styles.css`. Se selecciona la fuente de criterios con `data-rubric-src` en el elemento `body`; si no se indica, se conserva `rubric.json`.
+- Cada evaluación tiene una clave distinta de `localStorage`, por lo que los avances y datos de cada versión no se mezclan.
+- En esta rúbrica todos los criterios se consideran obligatorios: Cumple o no cumple. Conserva identificación del equipo, URL de evidencias, reporte e impresión/PDF.
+
+Página publicada (si GitHub Pages está habilitado):
+`https://hubergiron.github.io/Integracion-mecatronica/evaluacion-resumida.html`

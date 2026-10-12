@@ -350,3 +350,9 @@ input.invalid { border-color: var(--danger); }
     min-width: 0;
   }
 }
+
+/* Selector entre versiones de la autoevaluación. */
+.rubric-nav { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.rubric-nav a { display: inline-flex; align-items: center; padding: 9px 14px; color: #fff; border: 1px solid rgba(255,255,255,.46); border-radius: 10px; text-decoration: none; font-size: .9rem; font-weight: 700; background: rgba(255,255,255,.08); }
+.rubric-nav a:hover, .rubric-nav a:focus-visible { background: rgba(255,255,255,.2); }
+.rubric-nav a[aria-current="page"] { background: #fff; color: #68152f; border-color: #fff; }

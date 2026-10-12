@@ -476,8 +476,9 @@ function validateRubricJson(data) {
 async function init() {
   bindStaticEvents();
   try {
-    const response = await fetch('./rubric.json', { cache: 'no-store' });
-    if (!response.ok) throw new Error(`No se pudo cargar rubric.json (${response.status}).`);
+    const rubricFile = document.body.dataset.rubricSrc || './rubric.json';
+    const response = await fetch(rubricFile, { cache: 'no-store' });
+    if (!response.ok) throw new Error(`No se pudo cargar ${rubricFile} (${response.status}).`);
     const data = await response.json();
     validateRubricJson(data);
     rubricData = data;
@@ -495,7 +496,7 @@ async function init() {
   } catch (error) {
     console.error(error);
     loadingMessage.classList.add('loading-panel--error');
-    loadingMessage.innerHTML = `<strong>No fue posible cargar la rúbrica.</strong><br>${escapeHtml(error.message)}<br><small>Si abriste index.html directamente desde el disco, ejecuta un servidor local o publícalo en GitHub Pages para permitir la carga de rubric.json.</small>`;
+    loadingMessage.innerHTML = `<strong>No fue posible cargar la rúbrica.</strong><br>${escapeHtml(error.message)}<br><small>Si abriste index.html directamente desde el disco, ejecuta un servidor local o publícalo en GitHub Pages para permitir la carga de los datos de evaluación.</small>`;
   }
 }
 

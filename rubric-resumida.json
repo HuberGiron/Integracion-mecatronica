@@ -1,0 +1,245 @@
+{
+  "version": "1.0.0",
+  "title": "Autoevaluación resumida · Proyecto de Integración Mecatrónica",
+  "shortTitle": "Integración Mecatrónica · Evaluación resumida",
+  "description": "Lista de verificación esencial para documentar y demostrar la solución: concepto, mecánica, electrónica, software, integración y conclusiones.",
+  "instructions": "Marca Cumple solo cuando la evidencia existe, es verificable, está disponible en el enlace del proyecto y corresponde con la versión física presentada. Todos los criterios son obligatorios; si falta cualquier elemento del criterio, queda sin marcar.",
+  "storageKey": "integracion-autoevaluacion-resumida-v1",
+  "tags": {
+    "photo": "Fotografía",
+    "video": "Video",
+    "download": "Descargable",
+    "test": "Prueba",
+    "manufacturing": "Fabricación"
+  },
+  "sections": [
+    {
+      "id": "concepto",
+      "title": "1. Concepto y definición",
+      "description": "Definición, propuesta y organización general de la solución.",
+      "items": [
+        {
+          "id": "B01",
+          "title": "Problema, objetivos y requisitos",
+          "detail": "Se documentan la necesidad, la función general, los requisitos solicitados y las restricciones relevantes.",
+          "weight": 3
+        },
+        {
+          "id": "B02",
+          "title": "Bocetos de la solución",
+          "detail": "Se incluyen bocetos que permiten identificar la disposición y la relación entre los componentes principales.",
+          "weight": 3
+        },
+        {
+          "id": "B03",
+          "title": "Alternativas y selección",
+          "detail": "Se presentan alternativas consideradas y se justifica técnicamente la solución seleccionada.",
+          "weight": 3
+        },
+        {
+          "id": "B04",
+          "title": "Arquitectura general",
+          "detail": "Un esquema o diagrama permite identificar los subsistemas y sus relaciones.",
+          "weight": 3
+        }
+      ]
+    },
+    {
+      "id": "mecanica",
+      "title": "2. Mecánica y fabricación",
+      "description": "Diseño, fabricación y validación de todas las versiones físicas solicitadas.",
+      "items": [
+        {
+          "id": "B05",
+          "title": "Arquitectura y dimensiones mecánicas",
+          "detail": "Se identifican elementos estructurales, mecanismos, uniones, elementos de accionamiento y dimensiones principales.",
+          "weight": 3
+        },
+        {
+          "id": "B06",
+          "title": "Lista de materiales mecánicos",
+          "detail": "La lista incluye componentes, cantidades, materiales, dimensiones y datos de adquisición cuando corresponde.",
+          "weight": 4
+        },
+        {
+          "id": "B07",
+          "title": "Archivos editables y de fabricación",
+          "detail": "Están disponibles los diseños editables y los archivos utilizados para fabricar cada una de las versiones requeridas.",
+          "weight": 4
+        },
+        {
+          "id": "B08",
+          "title": "Planos de fabricación",
+          "detail": "Los planos de las piezas relevantes contienen dimensiones, materiales y especificaciones necesarias para reproducirlas.",
+          "weight": 4
+        },
+        {
+          "id": "B09",
+          "title": "Registro de fabricación por versión",
+          "detail": "Se documentan material, proceso, máquina, parámetros principales, archivos utilizados y ajustes efectuados en cada versión.",
+          "weight": 3
+        },
+        {
+          "id": "B10",
+          "title": "Secuencia de construcción y ensamblaje",
+          "detail": "Una guía con imágenes o diagramas muestra el orden de montaje y las conexiones mecánicas relevantes.",
+          "weight": 3
+        },
+        {
+          "id": "B11",
+          "title": "Evidencia de las versiones ensambladas",
+          "detail": "Se presentan fotografías reales de todos los ensamblajes terminados, con identificación de sus elementos principales.",
+          "weight": 4
+        },
+        {
+          "id": "B12",
+          "title": "Pruebas mecánicas",
+          "detail": "Se documentan pruebas de los movimientos o funciones mecánicas requeridas, ajustes, dificultades y resultados observados.",
+          "weight": 3
+        }
+      ]
+    },
+    {
+      "id": "electronica",
+      "title": "3. Electrónica",
+      "description": "Diseño de circuitos, implementación de la tarjeta y verificaciones por bloques.",
+      "items": [
+        {
+          "id": "B13",
+          "title": "Diagrama de bloques electrónico",
+          "detail": "Se muestran alimentación, procesamiento, entradas, salidas, conexiones y elementos de control.",
+          "weight": 3
+        },
+        {
+          "id": "B14",
+          "title": "Lista de materiales electrónicos",
+          "detail": "Se indican componentes, valores o números de parte, cantidades y referencias de adquisición cuando corresponda.",
+          "weight": 3
+        },
+        {
+          "id": "B15",
+          "title": "Esquemático completo y editable",
+          "detail": "Se entrega el circuito correspondiente a la versión presentada, con alimentación, conexiones y funciones requeridas.",
+          "weight": 4
+        },
+        {
+          "id": "B16",
+          "title": "Diseño de tarjeta y archivos de fabricación",
+          "detail": "Se entregan diseño editable, disposición de componentes, vistas y archivos necesarios para fabricar la tarjeta desarrollada.",
+          "weight": 4
+        },
+        {
+          "id": "B17",
+          "title": "Manufactura y montaje electrónico",
+          "detail": "Se muestran evidencias de fabricación, ensamblaje, soldadura, tarjeta terminada y correcciones realizadas.",
+          "weight": 3
+        },
+        {
+          "id": "B18",
+          "title": "Pruebas electrónicas por bloques",
+          "detail": "Se presentan verificaciones de las funciones electrónicas relevantes antes de la integración, con resultados registrados.",
+          "weight": 3
+        }
+      ]
+    },
+    {
+      "id": "programacion",
+      "title": "4. Programación e interfaz",
+      "description": "Estructura de software, documentación del control y entrega de código funcional.",
+      "items": [
+        {
+          "id": "B19",
+          "title": "Arquitectura del software",
+          "detail": "Se documentan los componentes lógicos y la relación entre entradas, procesamiento, acciones e interfaz.",
+          "weight": 3
+        },
+        {
+          "id": "B20",
+          "title": "Diagrama de flujo",
+          "detail": "Un diagrama representa la secuencia principal de ejecución, decisiones y operación del sistema implementado.",
+          "weight": 3
+        },
+        {
+          "id": "B21",
+          "title": "Interfaz y procedimiento de operación",
+          "detail": "Se incluyen capturas, descripción de controles, modos de uso, parámetros de acceso y pasos para operar el sistema.",
+          "weight": 3
+        },
+        {
+          "id": "B22",
+          "title": "Librerías y dependencias",
+          "detail": "Se registran nombre, función y versión de las librerías o recursos necesarios para reproducir el software.",
+          "weight": 3
+        },
+        {
+          "id": "B23",
+          "title": "Organización en funciones",
+          "detail": "Se identifican y explican los bloques o funciones principales utilizados en el código.",
+          "weight": 4
+        },
+        {
+          "id": "B24",
+          "title": "Código fuente final descargable",
+          "detail": "Se entrega el código completo, editable y compilable, correspondiente a la versión demostrada y con instrucciones básicas de ejecución.",
+          "weight": 4
+        }
+      ]
+    },
+    {
+      "id": "integracion",
+      "title": "5. Integración y pruebas",
+      "description": "Ensamblaje funcional y verificación de los modos de operación y resultados.",
+      "items": [
+        {
+          "id": "B25",
+          "title": "Integración física de subsistemas",
+          "detail": "Se documenta el montaje de elementos electrónicos, alimentación, cableado y componentes de control en el sistema físico.",
+          "weight": 3
+        },
+        {
+          "id": "B26",
+          "title": "Integración entre electrónica y software",
+          "detail": "Se comprueba que las entradas, salidas y acciones implementadas funcionan correctamente en el sistema real.",
+          "weight": 3
+        },
+        {
+          "id": "B27",
+          "title": "Pruebas de los modos de operación requeridos",
+          "detail": "Se demuestra el funcionamiento de cada forma de operación solicitada, incluido su acceso o configuración cuando corresponda.",
+          "weight": 4
+        },
+        {
+          "id": "B28",
+          "title": "Prueba funcional completa",
+          "detail": "Se documenta una secuencia integrada que cumple la función principal solicitada, con evidencia real y resultados.",
+          "weight": 3
+        },
+        {
+          "id": "B29",
+          "title": "Comparación de las versiones fabricadas",
+          "detail": "Se comparan todas las versiones requeridas mediante los mismos criterios de fabricación, ensamblaje y desempeño.",
+          "weight": 3
+        }
+      ]
+    },
+    {
+      "id": "conclusiones",
+      "title": "6. Conclusiones y entrega",
+      "description": "Análisis de los resultados y consistencia de la documentación final.",
+      "items": [
+        {
+          "id": "B30",
+          "title": "Conclusiones técnicas",
+          "detail": "Se analiza el cumplimiento de requisitos, los resultados, problemas, correcciones y limitaciones observadas.",
+          "weight": 2
+        },
+        {
+          "id": "B31",
+          "title": "Evidencias y archivos coherentes con la entrega",
+          "detail": "La documentación enlaza las pruebas y fotografías o videos con resultados verificables; los archivos disponibles corresponden al sistema presentado.",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}
